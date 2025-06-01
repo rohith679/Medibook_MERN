@@ -1,0 +1,34 @@
+@import url(app.css);
+
+.doctors {
+  margin-bottom: 5rem;
+}
+
+.doctors h2 {
+  color: hsl(45, 100%, 72%); /* Heading color */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.doctors-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 3rem;
+  width: 100%;
+}
+
+/* Update doctor card styles */
+.doctor-card {
+  border: 2px solid hsl(45, 100%, 72%); /* Box outline */
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgb(37, 37, 37); /* Optional background for contrast */
+  color: white; /* Text color */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}

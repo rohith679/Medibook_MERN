@@ -1,0 +1,70 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5); /* Add a background overlay */
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 30%;
+  padding: 2rem;
+  border: 1px solid var(--light-blue);
+  border-radius: 10px;
+  color: var(--light-blue);
+  background-color: rgb(37, 37, 37);
+  position: relative;
+}
+
+.modal__content h2 {
+  color: hsl(45, 100%, 72%);
+}
+
+.close-btn {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  font-size: 1.5rem;
+  color: hsl(45, 100%, 72%);
+  cursor: pointer;
+}
+
+.modal__content .btn {
+  font-size: 0.9rem;
+}
+
+.book {
+  width: 80%;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--light-blue);
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 68%);
+  color: var(--light-blue);
+  cursor: pointer;
+}
+
+.form-input:focus {
+  outline: 2px solid hsl(45, 100%, 72%);
+}
+
+/* Fix for inputs to make sure the full box is clickable */
+input[type="date"],
+input[type="time"] {
+  appearance: none; /* Removes native styling, allowing full box click */
+  -webkit-appearance: none; /* Support for WebKit browsers */
+  cursor: pointer;
+}

@@ -1,0 +1,179 @@
+/* Register Section */
+.register-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
+}
+
+.register-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/medibook.png') no-repeat center center;
+  background-size: cover; /* Cover the entire background */
+  opacity: 0.4; /* Adjust opacity */
+  z-index: -1; /* Place it behind other content */
+}
+
+/* Register Container */
+.register-container {
+  flex-direction: column;
+  gap: 2rem;
+  width: 30%;
+  border: 2px solid hsl(45, 100%, 72%); /* Outline box */
+  border-radius: 10px; /* Optional: Rounded corners */
+  padding: 2rem; /* Optional: Padding inside the box */
+  background: rgba(21, 19, 19, 0.7); /* Background color for the container with transparency */
+}
+
+.form-heading {
+  font-size: 2rem;
+  color: hsl(45, 100%, 72%); /* Header color */
+}
+
+/* Register Form */
+.register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid hsl(45, 100%, 72%); /* Small outline box around form */
+  border-radius: 5px; /* Optional: Rounded corners */
+  padding: 1rem; /* Optional: Padding inside the form */
+}
+
+.form-input,
+textarea,
+select {
+  font-size: 1rem;
+  background-color: rgb(234, 234, 234);
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-family);
+}
+
+.form-input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Image Upload Section */
+.file-input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.file-input-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: rgb(234, 234, 234);
+  border-radius: 5px;
+  font-family: var(--font-family);
+  text-align: left;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.upload-icon {
+  margin-left: 10px;
+  color: #333; /* Adjust icon color */
+}
+
+.image-preview {
+  margin-top: 1px; /* Decrease the space above the image preview */
+  margin-bottom: 1px; /* Decrease the space below the image preview */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex; /* Center the content horizontally */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  margin-left: auto; /* Center the preview container itself within its parent */
+  margin-right: auto; /* Center the preview container itself within its parent */
+}
+
+.profile-preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+/* Login Link */
+.login-link {
+  color: var(--darker-blue);
+  text-decoration: underline; /* Add underline */
+}
+
+.login-link:hover {
+  color: hsl(45, 100%, 72%); /* Change color on hover */
+}
+
+/* Button Styles */
+.btn.form-btn {
+  background-color: hsl(45, 100%, 72%); /* Button color */
+  color: black; /* Text color */
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.form-btn:hover {
+  background-color: white; /* Button color on hover */
+  color: hsl(0, 0%, 0%); /* Text color on hover */
+}
+
+/* Media Queries */
+@media (max-width: 1184px) {
+  .register-container {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1120px) {
+  .register-container {
+    width: 35%;
+  }
+}
+
+@media (max-width: 746px) {
+  .register-container {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .register-container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 408px) {
+  .register-container {
+    width: 70%;
+  }
+}
