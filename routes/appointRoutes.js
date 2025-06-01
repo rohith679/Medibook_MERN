@@ -4,6 +4,7 @@ const appointmentController = require("../controllers/appointmentController");
 
 const appointRouter = express.Router();
 
+
 appointRouter.get(
   "/getallappointments",
   auth,
