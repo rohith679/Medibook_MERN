@@ -20,4 +20,3 @@ MediBook is a user-friendly web application that simplifies the process of booki
 * **Backend:** Node.js, Express.js, MongoDB, Mongoose, JWT (JSON Web Tokens), Bcrypt, CORS, Dotenv
 * **Cloudinary:** For image uploads
 
-
